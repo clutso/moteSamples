@@ -1,0 +1,4 @@
+#ignoring credential files
+loracredentials.h 
+#ignoring playground projetcs
+pycom_lopy4AndpysenseOrig/
