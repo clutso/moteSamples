@@ -2,6 +2,7 @@
 #include "lorautils.h"
 #include "ledutils.h"
 #include "sensorutils.h"
+#include "loracredentials.h"
 
 bool DEBUGG_MODE= false;
 bool TURN_BUILTINLED_ON= false;
@@ -16,13 +17,12 @@ void setup()
   TURN_BUILTINLED_ON ? enableBuiltInLed(true):enableBuiltInLed(false) ;
   setRGB();
   setLedBLACK();
-  
   initModule();
   //using OTAA by default Use your own keys
   
-  char strDev[]="0000000000000000";
-  char strApp[]="0000000000000000";
-  char strAKey[]="00000000000000000000000000000000";
+  char strDev[]= DEVEUI;
+  char strApp[]= APPEUI;
+  char strAKey[]=APPKEY;
   
   hexDecode(strDev,strlen(strDev),DevEUI );
   hexDecode(strApp,strlen(strApp),AppEUI );
@@ -32,8 +32,8 @@ void setup()
 }
 
 void loop()
-{
-  
+{ //NOTE: this SHOULD be a byte array 
+  //using string to ease academic porpouses
    String reading = getTemperature();
  
    if(DEBUGG_MODE)
