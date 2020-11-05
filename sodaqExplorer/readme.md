@@ -14,7 +14,7 @@ This board uses arduino IDE to compile and upload the code.
 
 - You also have to target the right board by selecting  _**Tools > Board > SODAQ SAMD (32-bits ARM Cortex-M0+) Boards: > SODAQ ExpLoRer**_ 
 
-- This code uses _Sodaq_RN2483.h_ and _Sodaw_wdt.h_ libraries which can be installed using the Arduino Library Manager. To do this you just have to select _**Tools > Library Manager...**_ , type the name of the libraries required in the search box, and once located click the "install" button.
+- This code uses _Sodaq_RN2483.h_ and _Sodaq_wdt.h_ libraries which can be installed using the Arduino Library Manager. To do this you just have to select _**Tools > Library Manager...**_ , type the name of the libraries required in the search box, and once located click the "install" button.
 
 - This code uses _loracredentials.h_ file* to store LoRa credentials (AppKey, DevEUI and AppEUI). This file contains the following lines: 
 
