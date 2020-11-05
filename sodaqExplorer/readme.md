@@ -4,7 +4,7 @@
 
 The following Arduino project will setup your board to join a LoRa Network then read the temperature from ExpLoRer's integrated sensor and send the readings to the selected LNS. 
 
-:warning: _**NOTE:** The following code has been adapted for educational porpouses. Some methods (like the once related to payload formating) has been over-simplified to be more illustrative. This code is not recommended for Operative environments._
+:warning: _**NOTE:** The following code has been adapted for educational porpouses. Some methods (like the ones related to payload formating) has been over-simplified to be more illustrative. This code is not recommended for Operative environments._
 
 ## Setup notes
 
